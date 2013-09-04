@@ -1,0 +1,104 @@
+
+      .laptop-showcase.hover .laptop .screen .screen-inner {
+        -webkit-animation: ls-move-screen-out 0.2s ease-in-out;
+      }
+
+      .laptop-showcase.hover:hover .laptop .screen .screen-inner {
+        -webkit-transform:rotateX(0deg);
+        -webkit-transform-origin:0% 100% 0.0;
+        -webkit-animation: ls-move-screen-in 0.2s ease-in-out;
+      }
+
+      .laptop-showcase.hover .laptop .body .power {
+        -webkit-animation: ls-power-pulse linear 2s infinite;
+        -moz-animation: ls-power-pulse linear 2s infinite;
+        -ms-animation: ls-power-pulse linear 2s infinite;
+        -o-animation: ls-power-pulse linear 2s infinite;
+        animation: ls-power-pulse linear 2s infinite;
+      }
+      .laptop-showcase.hover:hover .laptop .body .power {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        -o-animation: none;
+        animation: none;
+      }
+
+/******************************************\
+  $KEYFRAMES
+  animation keyframes
+\******************************************/
+
+@-webkit-keyframes ls-move-screen-in {
+  from {
+    -webkit-transform: rotateX(3deg);
+  }
+  to { 
+    -webkit-transform: rotateX(0deg);
+  }
+}
+
+@-webkit-keyframes ls-move-screen-out {
+  from {
+    -webkit-transform: rotateX(0deg);
+  }
+  to { 
+    -webkit-transform: rotateX(3deg);
+  }
+}
+
+@-webkit-keyframes ls-power-pulse {
+  0% {
+    background: #FFF;
+  }
+  50% {
+    background: #CFCBC3;
+  }
+  100% {
+    background: #FFF;
+  }
+}
+@-moz-keyframes ls-power-pulse {
+  0% {
+    background: #FFF;
+  }
+  50% {
+    background: #CFCBC3;
+  }
+  100% {
+    background: #FFF;
+  }
+}
+@-ms-keyframes ls-power-pulse {
+  0% {
+    background: #FFF;
+  }
+  50% {
+    background: #CFCBC3;
+  }
+  100% {
+    background: #FFF;
+  }
+}
+@-o-keyframes ls-power-pulse {
+  0% {
+    background: #FFF;
+  }
+  50% {
+    background: #CFCBC3;
+  }
+  100% {
+    background: #FFF;
+  }
+}
+@keyframes ls-power-pulse {
+  0% {
+    background: #FFF;
+  }
+  50% {
+    background: #CFCBC3;
+  }
+  100% {
+    background: #FFF;
+  }
+}

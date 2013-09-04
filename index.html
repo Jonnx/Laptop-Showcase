@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Laptop Showcase</title>
+
+	<!-- DEMO STYLESHEETS -->
+	<link rel="stylesheet" type="text/css" href="./libs/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+	<!-- REQUIRED FOR LAPTOP-SHOWCASE -->
+	<link rel="stylesheet" type="text/css" href="./libs/laptop-showcase/laptopshowcase-base.css">
+	<link rel="stylesheet" type="text/css" href="./libs/laptop-showcase/laptopshowcase-hover.css">
+
+	<!-- DEMO ONLY JAVASCRIPT -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			$("#toggleHover").on("click", function() {
+				$("#preview").toggleClass("hover");
+			});
+
+		});
+
+	</script>
+
+</head>
+<body>
+	
+	<div class="laptop-showcase hover" id="preview">
+		
+		<!-- DEFINE WITH OF LAPTOP-SHOWCASe -->
+		<div class="laptop" style="width:50%;">
+			
+			<div class="screen">
+				<div class="screen-inner">
+					<img src="./img/screen.jpg" alt="Screenshot" />
+				</div>
+			</div>
+
+			<div class="body">
+				<div class="grip"></div>
+				<div class="power"></div>
+			</div>
+
+		</div>
+		
+		<br /><br />
+		<p style="text-align:center;">
+			<button id="toggleHover" class="btn btn-default">
+				Toggle Animation On/Off
+			</button>
+		</p>
+
+	</div>
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
+				<h1>Laptop Showcase</h1>
+				<p>
+					Laptop Showcase is a simple, leightweigt, yet engaging way
+					to show off your digital content such as websites, interface designs, and
+					artwork in its intended context: a computer screen.
+				</p>
+
+				<h2>Features</h2>
+				<ul>
+					<li>Extremely Light <strong>(3kb)</strong></li>
+					<li>Designed For Cross-Broser Usage <a href="#compatibility">(Compatibility Checks)</a></li>
+					<li>Responsive (works on desktops &amp; mobile)</li>
+					<li>Flexible (showcase any content such as images, videos &amp; iFrames)</li>
+					<li>
+						Animated using CSS only <strong>(no JavaScript or jQuery)</strong>
+						<ul>
+							<li>Laptop Lid movement on Hover (mouse over)</li>
+							<li>
+								Power Indicator pulses (inidcate standby) when not in Hover-State (mouse out). 
+								It then stops pulsing on Hover, indicating active use like on a real computer.
+							</li>
+						</ul>
+					</li>
+					<li>
+						Responsive (Fluid &amp; 
+						<a href="http://getbootstrap.com/css/#responsive-utilities" target="_blank">
+							Bootstrap Breakpoints
+						</a>)
+					</li>
+				</ul>
+
+				<h2 id="compatibility">Compatibility</h2>
+				<table class="table table-bordered table-compatibility">
+					<thead>
+						<th>Feature</th>
+						<th>Chrome</th>
+						<th>Firefox</th>
+						<th>Safari</th>
+						<th>IE 10+</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Static Laptop Showcase</td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-question-sign"></i></td>
+						</tr>
+						<tr>
+							<td>Animated Lid</td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-remove"></i></td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-question-sign"></i></td>
+						</tr>
+						<tr>
+							<td>Animated Power Indicator</td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-question-sign"></i></td>
+						</tr>
+						<tr>
+							<td>Responsive</td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-question-sign"></i></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h2>Usage</h2>
+
+				<h4>Requirements <small>To Enable Latop Showcase</small></h4>
+				<p>
+					Laptop Showcase comes with 2 CSS files: one to provide base functionality such
+					as the layout and computer design and the other to enable animations. The only 
+					necessary one is the <code>laptopshowcase-base.css</code> file. 
+				</p>
+				<pre>
+&lt;!-- BASE: Necessary --&gt;
+&lt;link rel="stylesheet" type="text/css" href="./laptop-showcase/laptopshowcase-base.css"&gt;
+&lt;!-- HOVER: Only necessary when using animations --&gt;
+&lt;link rel="stylesheet" type="text/css" href="./laptop-showcase/laptopshowcase-hover.css"&gt;</pre>
+
+				<h4>HTML Code <small>To Display A Laptop Showcase</small></h4>
+				<pre>
+&lt;div class="laptop" style="width:50%; [DEFINE YOUR SIZE HERE]"&gt;
+			
+	&lt;div class="screen"&gt;
+		&lt;div class="screen-inner"&gt;
+			[PLACE YOUR CONTENT TO SHOWCASE HERE]
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class="body"&gt;
+		&lt;div class="grip"&gt;&lt;/div&gt;
+		&lt;div class="power"&gt;&lt;/div&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;</pre>
+			</div>
+
+			<div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
+				<br />
+				<p>
+					<a href="http://www.github.com/jonnx/Laptop-Showcase" target="_blank" class="btn btn-default btn-lg btn-block" style="text-align:left;">
+						&nbsp;&nbsp;<i class="glyphicon glyphicon-share-alt"></i>
+						Laptop Showcase on GitHub
+					</a>
+					<a href="./downloads" target="_blank" class="btn btn-success btn-lg btn-block" style="text-align:left;">
+						&nbsp;&nbsp;<i class="glyphicon glyphicon-cloud-download"></i>
+						Download Source
+					</a>
+				</p>
+			</div>
+		</div>
+
+		<hr />
+		<p>
+			<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Laptop Showcase</span> by 
+			<a xmlns:cc="http://creativecommons.org/ns#" href="http://www.jonasweigert.com/code/laptop-showcase" property="cc:attributionName" rel="cc:attributionURL">
+				Jonas Weigert
+			</a> 
+			is licensed under a 
+			<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">
+				Creative Commons Attribution-ShareAlike 3.0 Unported License
+			</a>.
+		</p>
+		<p>
+			Showcase Photo of the World Fair from 
+			<a href="http://www.neonatology.org/pinups/ConeyIslandIncubators1906_large.gif" target="_blank">
+				www.neonatology.org
+			</a>
+		</p>
+	</div>
+
+
+
+</body>
+</html>

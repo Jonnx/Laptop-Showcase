@@ -1,0 +1,102 @@
+
+.laptop-showcase {
+	/* NO CSS BY DEFAULT */
+}
+
+	.laptop {
+		margin: auto;
+		background: none;
+	}
+
+		.laptop .screen {
+			-webkit-perspective:150; /* Safari and Chrome */
+			-moz-perspective:150; /* Firefox */
+			-ms-perspective:150; /* IE 10+ */
+			-o-perspective:150; /* Opera */
+			perspective:150; /* CSS3 Standard */
+
+		}
+			.laptop .screen .screen-inner {
+				margin: auto;
+				padding:30px 30px 10px 30px;
+				width: 90%;
+				border:3px solid #CFCBC3;
+				border-bottom: 0px;
+				border-radius: 25px 25px 0px 0px;
+				background: #000;
+
+				/* WEBKIT */
+				-webkit-transform:rotateX(3deg);
+				-webkit-transform-origin:0% 100% 0.0;
+
+				/* CSS3 Standard */
+				transform:rotateX(3deg);
+				transform-origin:0% 100% 0.0;
+			}
+				/* Ensure Showcase Image Covers Entrie Laptop Screen */
+				/* NOT ESSENTIAL */
+				.laptop .screen .screen-inner img {
+					width: 100%;
+				}
+
+		.laptop .body {
+			width: 100%;
+			height: 40px;
+			border-radius: 3px 3px 10px 10px;
+			padding:0 5% 0 5%;
+			background: #CFCBC3;
+		}
+			.laptop .body .grip {
+				margin:auto;
+				width: 20%;
+				height: 10px;
+				border-radius: 0px 0px 10px 10px;
+				background: #DDD;
+			}
+			.laptop .body .power {
+				width: 5%;
+				height:3px;
+				background: #FFF;
+				margin-top: 8px;
+				float: right;
+			}
+
+@media screen and (min-width: 1200px) {
+	/* USE DEFAULT STYLES */
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199) {
+	/* USE DEFAULT STYLES */
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.laptop .screen .screen-inner {
+		padding:20px 20px 5px 20px;
+		border-radius: 15px 15px 0px 0px;
+	}
+	.laptop .body {
+			height: 30px;
+			border-radius: 3px 3px 10px 10px;
+	}
+		.laptop .body .power {
+			margin-top: 4px;
+		}
+}
+
+@media screen and (max-width: 767px) {
+	.laptop .screen .screen-inner {
+		padding:10px 10px 3px 10px;
+		border-radius: 5px 5px 0px 0px;
+	}
+	.laptop .body {
+			height: 15px;
+			border-radius: 1px 1px 5px 5px;
+	}
+		.laptop .body .power {
+			margin-top: 2px;
+		}
+		.laptop .body .grip {
+			height: 4px;
+		}
+}
+

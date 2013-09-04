@@ -1,0 +1,20 @@
+/******************************************\
+	ADDITIONAL STYLE
+	some more css for the demo but not
+	relevant to the laptop-showcase library
+\******************************************/
+
+.laptop-showcase {
+	padding: 40px 0px 40px 0px;
+	background:#222222;
+	background-image: url("./cartographer.png");
+}
+
+table.table.table-compatibility td, 
+table.table.table-compatibility th {
+	text-align: center;
+}
+table.table.table-compatibility td:first-child,
+table.table.table-compatibility th:first-child {
+	text-align: left;
+}
